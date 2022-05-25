@@ -1,0 +1,6 @@
+/Users/fernandovazquez/ProyectoAP/BackEnd/src/main/java/com/portfolio/fv/Entity/Persona.java
+/Users/fernandovazquez/ProyectoAP/BackEnd/src/main/java/com/portfolio/fv/Repository/IPersonaRepository.java
+/Users/fernandovazquez/ProyectoAP/BackEnd/src/main/java/com/portfolio/fv/FvApplication.java
+/Users/fernandovazquez/ProyectoAP/BackEnd/src/main/java/com/portfolio/fv/Interface/IPersonaService.java
+/Users/fernandovazquez/ProyectoAP/BackEnd/src/main/java/com/portfolio/fv/Service/ImpPersonaService.java
+/Users/fernandovazquez/ProyectoAP/BackEnd/src/main/java/com/portfolio/fv/Controller/PersonaController.java
