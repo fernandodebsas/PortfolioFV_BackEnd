@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://portfoliofv.web.app/iniciar-sesion")
 public class PersonaController {
     @Autowired IPersonaService ipersonaService;
     
