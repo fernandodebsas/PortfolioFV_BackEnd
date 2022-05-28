@@ -20,14 +20,29 @@ public class Persona implements Serializable {
     private Long id;
     
     @NotNull
-    @Size(min = 1, max = 50, message = "no cumple con la longitud")
+    @Size(min = 1, max = 45, message = "no cumple con la longitud")
     private String nombre;
     
     @NotNull
-    @Size(min = 1, max = 50, message = "no cumple con la longitud")
+    @Size(min = 1, max = 45, message = "no cumple con la longitud")
     private String apellido;
     
-    @Size(min = 1, max = 50, message = "no cumple con la longitud")
-    private String img; 
+    @Size(min = 1, max = 200, message = "no cumple con la longitud")
+    private String domicilio;
+    
+    @Size(min = 1, max = 200, message = "no cumple con la longitud")
+    private String fechaNac;
+    
+    @Size(min = 1, max = 12, message = "no cumple con la longitud")
+    private String telefono;
+    
+    @Size(min = 1, max = 45, message = "no cumple con la longitud")
+    private String correo;
+    
+    @Size(min = 1, max = 200, message = "no cumple con la longitud")
+    private String sobreMi;
+    
+    @Size(min = 1, max = 200, message = "no cumple con la longitud")
+    private String urlFoto;
     
 }
