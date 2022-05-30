@@ -3,4 +3,5 @@ com/portfolio/fv/Entity/Persona.class
 com/portfolio/fv/Service/ImpPersonaService.class
 com/portfolio/fv/FvApplication.class
 com/portfolio/fv/Interface/IPersonaService.class
+com/portfolio/fv/FvApplication$1.class
 com/portfolio/fv/Controller/PersonaController.class
