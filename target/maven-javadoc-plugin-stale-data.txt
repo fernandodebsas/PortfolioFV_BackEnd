@@ -32,6 +32,7 @@ com.portfolio.fv.Entity
 com.portfolio.fv.Controller
 com.portfolio.fv
 com.portfolio.fv.Service
+com.portfolio.fv.exception
 /Users/fernandovazquez/.m2/repository/io/jsonwebtoken/jjwt/0.9.1/jjwt-0.9.1.jar = 1653704332965
 /Users/fernandovazquez/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.13.3/jackson-databind-2.13.3.jar = 1653273605770
 /Users/fernandovazquez/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.13.3/jackson-annotations-2.13.3.jar = 1653273605237
@@ -99,22 +100,22 @@ com.portfolio.fv.Service
 /Users/fernandovazquez/.m2/repository/com/h2database/h2/2.1.212/h2-2.1.212.jar = 1653441511535
 /Users/fernandovazquez/ProyectoAP/BackEnd/src/main/java/.DS_Store = 1653858533838
 /Users/fernandovazquez/ProyectoAP/BackEnd/src/main/java = 1653417917828
-/Users/fernandovazquez/ProyectoAP/BackEnd/target/generated-sources/annotations = 1653871995136
-/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/tag-search-index.js = 1653872006373
-/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/overview-tree.html = 1653872006346
-/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/module-search-index.js = 1653872006370
-/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/index.html = 1653872006350
-/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/package-search-index.js = 1653872006371
-/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/jquery-ui.overrides.css = 1653872006504
-/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/serialized-form.html = 1653872006208
-/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/index-all.html = 1653872006387
-/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/allpackages-index.html = 1653872006369
-/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/member-search-index.js = 1653872006373
-/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/script.js = 1653872006402
-/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/stylesheet.css = 1653872006401
-/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/overview-summary.html = 1653872006391
-/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/help-doc.html = 1653872006397
-/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/element-list = 1653872006103
-/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/allclasses-index.html = 1653872006366
-/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/type-search-index.js = 1653872006372
-/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/search.js = 1653872006445
+/Users/fernandovazquez/ProyectoAP/BackEnd/target/generated-sources/annotations = 1654043090116
+/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/tag-search-index.js = 1654043097231
+/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/overview-tree.html = 1654043097123
+/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/module-search-index.js = 1654043097225
+/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/index.html = 1654043097127
+/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/package-search-index.js = 1654043097227
+/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/jquery-ui.overrides.css = 1654043097639
+/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/serialized-form.html = 1654043096970
+/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/index-all.html = 1654043097264
+/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/allpackages-index.html = 1654043097223
+/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/member-search-index.js = 1654043097229
+/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/script.js = 1654043097273
+/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/stylesheet.css = 1654043097273
+/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/overview-summary.html = 1654043097267
+/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/help-doc.html = 1654043097271
+/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/element-list = 1654043096838
+/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/allclasses-index.html = 1654043097149
+/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/type-search-index.js = 1654043097228
+/Users/fernandovazquez/ProyectoAP/BackEnd/target/apidocs/search.js = 1654043097312

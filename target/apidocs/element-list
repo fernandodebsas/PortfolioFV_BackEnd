@@ -1,6 +1,7 @@
 com.portfolio.fv
 com.portfolio.fv.Controller
 com.portfolio.fv.Entity
+com.portfolio.fv.exception
 com.portfolio.fv.Interface
 com.portfolio.fv.Repository
 com.portfolio.fv.Service
