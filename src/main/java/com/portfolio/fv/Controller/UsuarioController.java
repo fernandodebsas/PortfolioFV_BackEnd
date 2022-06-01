@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "https://fv-portfolio.web.app/")
+@CrossOrigin(origins = "https://fv-portfolio.web.app")
 @RequestMapping("/usuario")
 public class UsuarioController {
     private final UsuarioService usuarioService;
