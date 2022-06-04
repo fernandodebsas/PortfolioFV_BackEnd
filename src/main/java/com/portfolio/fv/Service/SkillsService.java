@@ -1,13 +1,35 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.portfolio.fv.Service;
 
-/**
- *
- * @author fernandovazquez
- */
+import com.portfolio.fv.Entity.Skills;
+import com.portfolio.fv.Repository.SkillsRepo;
+import java.util.List;
+import javax.transaction.Transactional;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+@Transactional
 public class SkillsService {
+    private final SkillsRepo skillsRepo;
+
+    @Autowired
+    public SkillsService(SkillsRepo skillsRepo) {
+        this.skillsRepo = skillsRepo;  
+    }
+    
+    public Skills addSkill(Skills skills) {
+        return skillsRepo.save(skills);
+    }
+    
+    public List<Skills> buscarSkills() {
+        return skillsRepo.findAll();
+    }
+    public Skills editarSkills(Skills skills) {
+        return skillsRepo.save(skills);
+    }
+    
+    public void borrarSkill(Long id){
+        skillsRepo.deleteById(id);
+    }
     
 }
