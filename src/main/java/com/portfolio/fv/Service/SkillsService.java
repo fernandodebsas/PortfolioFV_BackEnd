@@ -24,7 +24,7 @@ public class SkillsService {
     public List<Skills> buscarSkills() {
         return skillsRepo.findAll();
     }
-    public Skills editarSkills(Skills skills) {
+    public Skills editarSkill(Skills skills) {
         return skillsRepo.save(skills);
     }
     

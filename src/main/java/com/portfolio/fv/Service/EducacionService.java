@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 @Service
 @Transactional
 public class EducacionService {
+    
     private final EducacionRepo educacionRepo;
 
     @Autowired

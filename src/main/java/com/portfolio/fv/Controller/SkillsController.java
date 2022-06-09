@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "https://fv-portfolio.web.app")
+@CrossOrigin(origins = "https://fv-portolio.web.app")
 @RequestMapping("/skills")
 public class SkillsController {
     
@@ -27,8 +27,8 @@ public class SkillsController {
     }
     
     @PutMapping("/update")
-    public ResponseEntity<Skills> editarSkill(@RequestBody Skills skills) {
-        Skills updateSkills = skillsService.editarSkills(skills);
+    public ResponseEntity<Skills> editarSkill(@RequestBody Skills skill) {
+        Skills updateSkills = skillsService.editarSkill(skill);
         return new ResponseEntity<>(updateSkills, HttpStatus.OK);
     }
     
@@ -39,8 +39,8 @@ public class SkillsController {
     }
     
     @PostMapping("/add")
-    public ResponseEntity<Skills> crearSkill(@RequestBody Skills skills) {
-        Skills nuevaSkills = skillsService.addSkill(skills);
+    public ResponseEntity<Skills> crearSkill(@RequestBody Skills skill) {
+        Skills nuevaSkills = skillsService.addSkill(skill);
         return new ResponseEntity<>(nuevaSkills, HttpStatus.CREATED);
     }
     

@@ -13,16 +13,18 @@ public class Skills {
     private String nombreSkill;
     private String fotoSkill;
     private int porcentaje;
+    private boolean isHardSkill;
     
     public Skills() {
         
     }
 
-    public Skills(Long idSkills, String nombreSkill, String fotoSkill, int porcentaje) {
+    public Skills(Long idSkills, String nombreSkill, String fotoSkill, int porcentaje, boolean isHardSkill) {
         this.idSkills = idSkills;
         this.nombreSkill = nombreSkill;
         this.fotoSkill = fotoSkill;
         this.porcentaje = porcentaje;
+        this.isHardSkill = isHardSkill;
     }
 
     public Long getIdSkills() {
@@ -56,6 +58,18 @@ public class Skills {
     public void setPorcentaje(int porcentaje) {
         this.porcentaje = porcentaje;
     }
+
+    public boolean getIsHardSkill() {
+        return isHardSkill;
+    }
+
+    public void setIsHardSkill(boolean isHardSkill) {
+        this.isHardSkill = isHardSkill;
+    }
+
+    
+    
+    
     
     
     
