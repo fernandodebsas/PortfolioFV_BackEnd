@@ -20,6 +20,7 @@ public class Usuario implements Serializable {
     private String apellido;
     private String domicilio;
     private String titulo;
+    @Column(columnDefinition = "varchar(512)")
     private String descripcion;
     private String fotoPerfil;
     

@@ -1,33 +1,36 @@
 package com.portfolio.fv.Entity;
 
+import java.io.Serializable;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Experiencia {
+public class Experiencia implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idExp;
     private String tituloExp;
-    private int fechaExp;
+    private String fechaExp;
+    @Column(columnDefinition = "varchar(512)")
     private String descExp;
     private String imagenExp;
+    private String urlExp;
     
     public Experiencia () {
         
     }
 
-    public Experiencia(Long idExp, String tituloExp, int fechaExp, String descExp, String imagenExp) {
+    public Experiencia(Long idExp, String tituloExp, String fechaExp, String descExp, String imagenExp, String urlExp) {
         this.idExp = idExp;
         this.tituloExp = tituloExp;
         this.fechaExp = fechaExp;
         this.descExp = descExp;
         this.imagenExp = imagenExp;
+        this.urlExp = urlExp;
     }
-    
-    
 
     public Long getIdExp() {
         return idExp;
@@ -45,11 +48,11 @@ public class Experiencia {
         this.tituloExp = tituloExp;
     }
 
-    public int getFechaExp() {
+    public String getFechaExp() {
         return fechaExp;
     }
 
-    public void setFechaExp(int fechaExp) {
+    public void setFechaExp(String fechaExp) {
         this.fechaExp = fechaExp;
     }
 
@@ -67,6 +70,16 @@ public class Experiencia {
 
     public void setImagenExp(String imagenExp) {
         this.imagenExp = imagenExp;
-    }    
+    }
+
+    public String getUrlExp() {
+        return urlExp;
+    }
+
+    public void setUrlExp(String urlExp) {
+        this.urlExp = urlExp;
+    }
+    
+    
     
 }
