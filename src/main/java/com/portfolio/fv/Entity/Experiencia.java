@@ -14,7 +14,7 @@ public class Experiencia implements Serializable {
     private Long idExp;
     private String tituloExp;
     private String fechaExp;
-    @Column(columnDefinition = "varchar(512)")
+    @Column(length = 512)
     private String descExp;
     private String imagenExp;
     private String urlExp;
