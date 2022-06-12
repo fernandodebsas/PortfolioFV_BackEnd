@@ -1,6 +1,7 @@
 package com.portfolio.fv.Entity;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,6 +10,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.validation.constraints.Size;
+import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity
 public class Usuario implements Serializable {
@@ -17,12 +20,17 @@ public class Usuario implements Serializable {
     @Column(nullable = false, updatable = false)
     private Long id;
     private String nombre;
+    private String middleName;
     private String apellido;
     private String domicilio;
     private String titulo;
-    @Column(length = 512)
+    @Size(min = 1, max = 512, message = "no cumple con la longitud")
     private String descripcion;
     private String fotoPerfil;
+    private String movilUsuario;
+    private String mailUsuario;
+    @DateTimeFormat(pattern="dd/MM/yyyy")
+    private LocalDate fechaNacUsuario;
     
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "idEdu")
     private List<Educacion> educacionList;
@@ -35,14 +43,18 @@ public class Usuario implements Serializable {
         
     }
 
-    public Usuario(Long id, String nombre, String apellido, String domicilio, String titulo, String descripcion, String fotoPerfil) {
+    public Usuario(Long id, String nombre, String middleName, String apellido, String domicilio, String titulo, String descripcion, String fotoPerfil, String movilUsuario, String mailUsuario, LocalDate fechaNacUsuario) {
         this.id = id;
         this.nombre = nombre;
+        this.middleName = middleName;
         this.apellido = apellido;
         this.domicilio = domicilio;
         this.titulo = titulo;
         this.descripcion = descripcion;
         this.fotoPerfil = fotoPerfil;
+        this.movilUsuario = movilUsuario;
+        this.mailUsuario = mailUsuario;
+        this.fechaNacUsuario = fechaNacUsuario;
     }
 
     public Long getId() {
@@ -59,6 +71,14 @@ public class Usuario implements Serializable {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
     }
 
     public String getApellido() {
@@ -101,6 +121,28 @@ public class Usuario implements Serializable {
         this.fotoPerfil = fotoPerfil;
     }
 
-    
+    public String getMovilUsuario() {
+        return movilUsuario;
+    }
+
+    public void setMovilUsuario(String movilUsuario) {
+        this.movilUsuario = movilUsuario;
+    }
+
+    public String getMailUsuario() {
+        return mailUsuario;
+    }
+
+    public void setMailUsuario(String mailUsuario) {
+        this.mailUsuario = mailUsuario;
+    }
+
+    public LocalDate getFechaNacUsuario() {
+        return fechaNacUsuario;
+    }
+
+    public void setFechaNacUsuario(LocalDate fechaNacUsuario) {
+        this.fechaNacUsuario = fechaNacUsuario;
+    }
     
 }
